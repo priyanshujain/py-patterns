@@ -1,8 +1,24 @@
 [tool.poetry]
-name = "py-patterns"
+name = "py-patterns-util"
 version = "0.1.0"
-description = ""
+description = "A util library for common patterns in python."
 authors = ["Priyanshu Jain <ipriyanshujain@gmail.com>"]
+packages = [
+    {include = "py_patterns"}
+]
+
+include = ['LICENSE',]
+license = 'MIT'
+readme = 'README.md'
+
+repository = 'https://github.com/priyanshujain/py-patterns'
+
+keywords = [
+    'python',
+    'design-patterns',
+    'adapters',
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
