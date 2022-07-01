@@ -6,6 +6,12 @@ A util library for common patterns in python.
 
 1. Adapters
 
+
+## Install
+```sh
+pip install py-patterns-util
+```
+
 ## Example
 
 ```py
