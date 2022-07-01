@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "py-patterns"
+version = "0.1.0"
+description = ""
+authors = ["Priyanshu Jain <ipriyanshujain@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+absl-py = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
