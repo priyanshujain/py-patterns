@@ -40,11 +40,15 @@ class Field(object):
         self.target = target_field
 
         lookup_keys = []
+        converted_value = None 
         if not self.source:
             lookup_keys.append(target_field)
+        elif self.source == "*":
+            converted_value = dict(source_data)
         else:
             lookup_keys = self.source.split(".")
-        converted_value = self.lookup_data(lookup_keys, source_data)
+        if lookup_keys:
+            converted_value = self.lookup_data(lookup_keys, source_data)
 
         # validate data type for converted value if given
         if (
